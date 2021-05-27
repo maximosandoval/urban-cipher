@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-
-
-function test() {
-  console.log(test);
-}
-=======
 // var $artistInput = $("#");
 // var $songInput = $("#");
 // var $lyrics = $("#");
@@ -16,7 +9,7 @@ function getLyrics() {
     let song = $songInput.val().trim();
     let lyricURL = "https://api.lyrics.ovh/v1/" + artist + "/" + song;
     fetch(lyricURL)
-        .then (function (response) {
+        .then(function (response) {
             response.json().then(function (data) {
                 $lyrics.text(data.lyrics);
             })
@@ -27,11 +20,11 @@ function searchWebster() {
     let word = $wordInputWebster.val().trim();
     let websterURL = "https://www.dictionaryapi.com/api/v3/references/collegiate/json/" + word + "?key=c5d60705-510a-44de-be78-83432ad9714a";
     fetch(websterURL)
-    .then (function (response) {
-        response.json().then(function (data) {
-            $websterDefinition.text(data.shortdef[0]);
+        .then(function (response) {
+            response.json().then(function (data) {
+                $websterDefinition.text(data.shortdef[0]);
+            })
         })
-    })
 }
 
 function searchUrban() {
@@ -39,14 +32,14 @@ function searchUrban() {
     let urbanURL = "https://mashape-community-urban-dictionary.p.rapidapi.com/define?term=" + word;
     fetch(urbanURL,
         "headers": {
-            "x-rapidapi-key": "1bcc08aea8mshc3a3e71246a7264p1de70cjsnb40efe43f9b3",
-            "x-rapidapi-host": "mashape-community-urban-dictionary.p.rapidapi.com"
-        })
-    .then (function (response) {
-        response.json().then(function (data) {
-            $urbanDefinition.text(data.list[0].definition);
-        })
+        "x-rapidapi-key": "1bcc08aea8mshc3a3e71246a7264p1de70cjsnb40efe43f9b3",
+        "x-rapidapi-host": "mashape-community-urban-dictionary.p.rapidapi.com"
     })
+        .then(function (response) {
+            response.json().then(function (data) {
+                $urbanDefinition.text(data.list[0].definition);
+            })
+        })
 }
 
 // function songDropDown() {
@@ -59,4 +52,3 @@ function searchUrban() {
 //             })
 //         })
 // }
->>>>>>> b9a3d7b3ffd9eaf91282d69f3aaee668bbacc3ca
