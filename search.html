@@ -1,13 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban-Cipher</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
+
 <body>
- <script src="./assets/script/search.js"></script>   
+  <nav class="navbar has-shadow">
+    <!-- Logo -->
+    <div class="navbar-brand">
+      <a class="navbar-item">
+        <img src="./assets/images/logo.png" alt="our-logo" style="max-height: 85px;">
+      </a>
+      <!-- Mobile "Hamburger Icon" -->
+      <a class="navbar-burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+    <!-- Navbar Menu -->
+    <div class="navbar-menu" id="navLinks">
+      <div class="navbar-end">
+        <a class="navbar-item">About</a>
+        <a class="navbar-item">Testimonials</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Lyric Section -->
+  <section class="section">
+    <div class="container">
+      <div class="columns is-multiline">
+        <div class="column is-12-tablet is-8-desktop">
+          <h1 class="title is-size-1" id="lyricsInput">Lyrics</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Odio laboriosam fugit error excepturi non recusandae accusamus molestias adipisci architecto
+            facilis mollitia amet eaque aliquam consequuntur omnis vel rerum, quidem, voluptates ipsa,
+            porro quae? Reiciendis beatae corrupti asperiores cupiditate laudantium voluptate dolorem quo fuga.
+            Earum, obcaecati repellendus quos perspiciatis et magnam in rerum id dicta suscipit inventore maiores non
+            quia eius,
+            dolores explicabo culpa debitis commodi asperiores repellat praesentium. Nisi quos quaerat omnis obcaecati!
+            Repellat dolorum quia et pariatur quaerat? Porro quae minus tempora numquam ad odit molestiae assumenda
+            natus!
+            Repellendus iure, iste omnis magnam animi laboriosam laborum repudiandae dolor odit.</p>
+        </div>
+        <!-- Definition Output -->
+        <div class="column is-6-tablet is-4-desktop" id="urbanWeb">
+          <div class="field">
+            <div class="control">
+              <input type="text" class="input" placeholder="Urban Dictionary Search">
+              <button class="button glow-button" type="submit">SEARCH</button>
+              <h3 class="is-size-4 has-text-weight-bold">Definition</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim neque, velit illo cupiditate facere iure
+                omnis quaerat animi dolores totam expedita aperiam,vel, iste eveniet obcaecati illum temporibus
+                provident facilis!</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-6-tablet is-4-desktop navbar-end" id="miriamWeb">
+          <div class="field">
+            <div class="control">
+              <input type="text" class="input" placeholder="Miriam Webster Dictionary Search">
+              <button class="button glow-button" type="submit">SEARCH</button>
+              <h3 class="is-size-4 has-text-weight-bold">Definition</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim neque, velit illo cupiditate facere iure
+                omnis quaerat animi dolores totam expedita aperiam,vel, iste eveniet obcaecati illum temporibus
+                provident
+                facilis!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Script -->
+  <script src="./assets/script/search.js"></script>
 </body>
 
 </html>
