@@ -1,0 +1,61 @@
+/* fixed Position */
+/* .navbar{
+position: fixed; 
+top: 0; 
+width: 100%; 
+} */
+
+/* Navigation */
+#navLinks{
+padding-right: 590px;
+padding-top: 60px;
+}
+
+/*Titile  */
+#urbCi{
+    margin-top: 100px;
+    color: #413596;
+}
+
+form input{
+    min-width: 550px;
+    min-height: 40px;
+}
+/* Search Input Size */
+form
+{
+    text-align: center;
+}
+
+form p {
+    color: #413596;
+}
+
+/* Button */
+.button{
+    margin-top: 30px;
+    color: white;
+    background-color: #413596;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+
+.glow-button:hover {
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+  }
+
+
+
+  /* CSS for search.html  */
+
+/* Color of Text */
+#lyricsInput,
+h3 {
+    color: #413596;
+}
+
+/* Search Input Size */
+.input{
+    max-width: 280px;
+}
+
