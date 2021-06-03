@@ -1,3 +1,4 @@
+
 let query = window.location.search.substring(1);
 let options = query.split(`&`);
 let songName = options[1].split(`=`);
@@ -13,8 +14,12 @@ burgerIcon.addEventListener(`click`, () => {
     navbarMenu.classList.toggle(`is-active`);
 });
 
+
+// function to render lyrics to screen
 function getLyrics() {
+    // API call to fetch lyrics
     let lyricURL = "https://api.lyrics.ovh/v1/" + artist + "/" + song;
+
     fetch(lyricURL)
         .then(function (response) {
             response.json().then(function (data) {
@@ -22,7 +27,6 @@ function getLyrics() {
 
                 const renderLyrics = document.getElementById("render-lyrics")
                 renderLyrics.textContent = data.lyrics
-                renderLyrics.append(lyrics)
             })
         })
 }
