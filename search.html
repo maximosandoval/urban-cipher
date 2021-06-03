@@ -48,8 +48,10 @@
         <div class="column is-6-tablet is-4-desktop" id="urbanWeb">
           <div class="field">
             <div class="control">
-              <input type="text" class="input" placeholder="Urban Dictionary Search">
-              <button class="button glow-button" type="submit">SEARCH</button>
+              <form id="urban-form">
+                <input type="text" class="input" id="urban-input" placeholder="Urban Dictionary Search">
+                <button class="button glow-button" type="submit">SEARCH</button>
+              </form>
               <h3 class="is-size-4 has-text-weight-bold">Definition</h3>
               <p id="render-urban"></p>
             </div>
@@ -58,8 +60,10 @@
         <div class="column is-6-tablet is-4-desktop navbar-end" id="miriamWeb">
           <div class="field">
             <div class="control">
-              <input type="text" class="input" placeholder="Miriam Webster Dictionary Search">
-              <button class="button glow-button" type="submit">SEARCH</button>
+              <form id="webster-form">
+                <input type="text" class="input" id="webster-input" placeholder="Miriam Webster Dictionary Search">
+                <button class="button glow-button" type="submit">SEARCH</button>
+              </form>
               <h3 class="is-size-4 has-text-weight-bold">Definition</h3>
               <p id="render-webster"></p>
             </div>

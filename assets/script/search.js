@@ -6,6 +6,12 @@ let artistName = options[0].split(`=`);
 let artist = artistName[1];
 let song = songName[1];
 
+// html elements for dictionary searches
+let websterForm = document.querySelector("#webster-form");
+let urbanForm = document.querySelector("#urban-form");
+let websterInput = document.querySelector("#webster-input");
+let urbanInput = document.querySelector("#urban-input");
+
 // Mobile Menu
 let burgerIcon = document.querySelector(`#burger`);
 let navbarMenu = document.querySelector(`#navLinks`);
@@ -19,12 +25,11 @@ burgerIcon.addEventListener(`click`, () => {
 function getLyrics() {
     // API call to fetch lyrics
     let lyricURL = "https://api.lyrics.ovh/v1/" + artist + "/" + song;
-
     fetch(lyricURL)
         .then(function (response) {
             response.json().then(function (data) {
                 console.log(data.lyrics);
-
+                // attaching lyrics to the html
                 const renderLyrics = document.getElementById("render-lyrics")
                 renderLyrics.textContent = data.lyrics
             })
@@ -33,18 +38,43 @@ function getLyrics() {
 getLyrics();
 
 
+// function to capture word input in form element
+let wordSubmitWebster = function (event) {
+    event.preventDefault();
+    let websterWord = websterInput.value.trim();
+    // getting word value and setting it to clear after search
+    if (websterWord) {
+        searchWebster(websterWord)
+        websterInput.value = '';
+    } else {
+        console.log('need word to search')
+    }
+}
+// event listener for word input
+websterForm.addEventListener('submit', wordSubmitWebster);
+
+// function to make API call
+function searchWebster() {
+    // capturing word input 
+    let word = websterInput.value;
+    let websterURL = "https://www.dictionaryapi.com/api/v3/references/collegiate/json/" + word + "?key=c5d60705-510a-44de-be78-83432ad9714a";
+    fetch(websterURL)
+        .then(function (response) {
+            response.json().then(function (data) {
+                console.log(data);
+                // attaching webster definition to html element
+                const renderWebster = document.getElementById("render-webster")
+                renderWebster.textContent = data[0].shortdef[0];
+            })
+        })
+}
 
 
-// function searchWebster() {
-//     let word = $wordInputWebster.val().trim();
-//     let websterURL = "https://www.dictionaryapi.com/api/v3/references/collegiate/json/" + word + "?key=c5d60705-510a-44de-be78-83432ad9714a";
-//     fetch(websterURL)
-//         .then(function (response) {
-//             response.json().then(function (data) {
-//                 $websterDefinition.text(data.shortdef[0]);
-//             })
-//         })
-// }
+
+
+
+
+
 
 // function searchUrban() {
 //     let word = $wordInputWebster.val().trim();
