@@ -1,9 +1,7 @@
 var searchForm = document.querySelector("#search-form")
 var $artistInput = document.querySelector("#artist-input");
 var $songInput = document.querySelector("#song-input");
-// var $lyrics = $("#");
-// var $websterDefinition = $("#");
-// var $urbanDefinition = $("#");
+
 
 
 
