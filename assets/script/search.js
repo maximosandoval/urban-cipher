@@ -70,7 +70,35 @@ function searchWebster() {
 
 
 
+function searchUrban(event) {
+    let word = event.target.previousElementSibling.value;
 
+    let $urbanRender = document.getElementById("render-urban");
+    let urbanURL = "https://mashape-community-urban-dictionary.p.rapidapi.com/define?term=" + word;
+    fetch(urbanURL, {
+        "headers": {
+            "x-rapidapi-key": "1bcc08aea8mshc3a3e71246a7264p1de70cjsnb40efe43f9b3",
+            "x-rapidapi-host": "mashape-community-urban-dictionary.p.rapidapi.com"
+        }
+    })
+    .then(function(response){
+     return   response.json()
+    })
+    .then(function(response){
+        let newUL = document.createElement("ol");
+        let deffList = response.list
+        for ( var i = 0 ; i < deffList.length;  i ++){
+        let newLi = document.createElement("li")
+            newLi.textContent = deffList[i].definition
+        newUL.append(newLi);
+        }
+        $urbanRender.append(newUL);
+console.log(word)
+    });
+    
+}
+let $urbanButton = document.getElementById("urban-button");
+$urbanButton.addEventListener("click",searchUrban);
 
 
 
