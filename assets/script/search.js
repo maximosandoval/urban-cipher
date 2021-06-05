@@ -33,6 +33,7 @@ function getLyrics() {
         .then(function (response) {
             return response.json()
         })
+
         .then(function (data) {
             console.log(data.lyrics);
             // attaching lyrics to the html
@@ -83,7 +84,8 @@ function searchWebster() {
     fetch(websterURL)
         .then(function (response) {
             // creating text content from API call
-            return response.json()
+
+      return response.json()
         })
         .then(function (data) {
             let newUL = document.createElement("ul");
@@ -95,6 +97,19 @@ function searchWebster() {
             }
             renderWebster.append(newUL);
         });
+
+
+            response.json().then(function (data) {
+                let newUL = document.createElement("ul");
+                let defList = data;
+                for (var i = 0; i < defList.length; i++) {
+                    let newLi = document.createElement("li")
+                    newLi.textContent = defList[i].shortdef[0];
+                    newUL.append(newLi);
+                }
+                renderWebster.append(newUL);
+            });
+        })
 
     websterInput.value = '';
 }
