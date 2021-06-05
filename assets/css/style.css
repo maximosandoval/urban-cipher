@@ -50,6 +50,14 @@ form p {
   box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
 }
 
+.testimonials{
+  
+  display: flex;
+  justify-content: space-around;
+  margin: 220px;
+}
+
+
 /* Waves */
 .waves {
   position: relative;
@@ -114,7 +122,7 @@ form p {
 }
 
 .typing-demo {
-  width: 33ch;
+  width: 39ch;
   animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;

@@ -33,8 +33,27 @@ function songDropDown() {
 }
 
 
+// Testimaonials API
+function ratings() {
+    var $ratings = document.querySelectorAll(".rating")
+    fetch('https://randomuser.me/api/?results=100')
+        .then(function (response) {
+            return response.json()
+        })
+        .then(function (response) {
+            console.log(response);
+            console.log($ratings);
+            $ratings[0].children[0].attributes[0].value = response.results[0].picture.large
+            $ratings[1].children[0].attributes[0].value = response.results[1].picture.large
+            $ratings[2].children[0].attributes[0].value = response.results[2].picture.large
+            $ratings[0].children[1].innerText = response.results[0].name.first + " " + response.results[0].name.last
+            $ratings[1].children[1].innerText = response.results[1].name.first + " " + response.results[1].name.last
+            $ratings[2].children[1].innerText = response.results[2].name.first + " " + response.results[2].name.last
+        })
 
+}
 
+ratings()
 
 
 // Mobile Menu
