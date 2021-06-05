@@ -1,3 +1,4 @@
+// api call break up 
 let query = window.location.search.substring(1);
 let options = query.split(`&`);
 let songName = options[1].split(`=`);
@@ -41,7 +42,7 @@ function getLyrics() {
 getLyrics();
 
 
-
+// function to search urban dictionary API
 function searchUrban() {
     let word = urbanInput.value;
 
@@ -55,6 +56,7 @@ function searchUrban() {
         .then(function (response) {
             return response.json()
         })
+        // creating text content from API call
         .then(function (response) {
             let newUL = document.createElement("ul");
             let deffList = response.list
@@ -71,14 +73,14 @@ urbanButton.addEventListener("click", searchUrban);
 
 
 
-// function to make API call
+// function to search webster dictionary API
 function searchWebster() {
-    // capturing word input 
 
     let word = websterInput.value;
     let websterURL = "https://www.dictionaryapi.com/api/v3/references/collegiate/json/" + word + "?key=c5d60705-510a-44de-be78-83432ad9714a";
     fetch(websterURL)
         .then(function (response) {
+            // creating text content from API call
             response.json().then(function (data) {
                 let newUL = document.createElement("ul");
                 let defList = data;
