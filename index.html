@@ -47,13 +47,27 @@
     <!-- <p class="subtitle has-text-centered">
         Deconstruct the meaning of your favorite song.
       </p> -->
-    <form id="search-form" action="search.html">
-      <input id="artist-input" class="input" type="text" name="artist" placeholder="Enter your favorite artist" /><br />
-      <p class="is-size-2 has-text-weight-bold">+</p>
-      <input id="song-input" class="input" type="text" name="song" placeholder="Enter the name of the song" /><br />
-      <button class="button glow-button" type="submit">SEARCH</button>
-    </form>
-  </section>
+      <form autocomplete= "off" id="search-form" action="search.html">
+        <div class="autocomplete">
+          <input
+          id="artist-input"
+          class="input"
+          type="text"
+          name="artist"
+          placeholder="Enter your favorite artist"
+        /><br />
+        <p class="is-size-2 has-text-weight-bold">+</p>
+        <input
+          id="song-input"
+          class="input"
+          type="text"
+          name="song"
+          placeholder="Enter the name of the song"
+        /><br />
+        </div>
+        <button class="button glow-button" type="submit">SEARCH</button>
+      </form>
+    </section>
 
   <!-- Testimonials -->
 <section class="testimonials is-size-5 has-text-weight-bold">
