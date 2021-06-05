@@ -25,7 +25,7 @@ function getLyrics() {
 function songDropDown() {
     topTracks = [];
     let artist = $artistInput.value;
-    let artistURL = "https://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=" + artist + "&api_key= fe213c5c74b1daedf69a016962169299&format=json";
+    let artistURL = "https://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=" + artist + "&api_key= fe213c5c74b1daedf69a016962169299&format=json&autocorrect=1";
     fetch(artistURL)
         .then(function (response) {
             response.json().then(function (data) {
