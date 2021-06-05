@@ -1,4 +1,3 @@
-
 let query = window.location.search.substring(1);
 let options = query.split(`&`);
 let songName = options[1].split(`=`);
