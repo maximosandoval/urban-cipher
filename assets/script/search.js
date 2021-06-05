@@ -31,13 +31,15 @@ function getLyrics() {
     let lyricURL = "https://api.lyrics.ovh/v1/" + artist + "/" + song;
     fetch(lyricURL)
         .then(function (response) {
-            response.json().then(function (data) {
-                console.log(data.lyrics);
-                // attaching lyrics to the html
-                const renderLyrics = document.getElementById("render-lyrics")
-                renderLyrics.textContent = data.lyrics
-            })
+            return response.json()
         })
+        .then(function (data) {
+            console.log(data.lyrics);
+            // attaching lyrics to the html
+            const renderLyrics = document.getElementById("render-lyrics")
+            renderLyrics.textContent = data.lyrics
+        })
+
 }
 getLyrics();
 
@@ -81,17 +83,19 @@ function searchWebster() {
     fetch(websterURL)
         .then(function (response) {
             // creating text content from API call
-            response.json().then(function (data) {
-                let newUL = document.createElement("ul");
-                let defList = data;
-                for (var i = 0; i < defList.length; i++) {
-                    let newLi = document.createElement("li")
-                    newLi.textContent = defList[i].shortdef[0];
-                    newUL.append(newLi);
-                }
-                renderWebster.append(newUL);
-            });
+            return response.json()
         })
+        .then(function (data) {
+            let newUL = document.createElement("ul");
+            let defList = data;
+            for (var i = 0; i < defList.length; i++) {
+                let newLi = document.createElement("li")
+                newLi.textContent = defList[i].shortdef[0];
+                newUL.append(newLi);
+            }
+            renderWebster.append(newUL);
+        });
+
     websterInput.value = '';
 }
 websterButton.addEventListener('click', searchWebster);
