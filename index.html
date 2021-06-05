@@ -1,57 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Urban Cipher</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
-    />
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-  </head>
 
-  <body>
-    <nav class="navbar has-shadow">
-      <!-- Logo -->
-      <div class="navbar-brand">
-        <a class="navbar-item">
-          <img
-            class="header-logo"
-            src="./assets/images/urban-cipher-logo.png"
-            alt="our-logo"
-            style="max-height: 65px"
-          />
-        </a>
-        <!-- Mobile "Hamburger Icon" -->
-        <a class="navbar-burger" id="burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-      </div>
-      <!-- Navbar Menu -->
-      <div class="navbar-menu" id="navLinks">
-        <div class="navbar-end">
-          <!-- <a class="navbar-item">About</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urban Cipher</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <nav class="navbar has-shadow">
+    <!-- Logo -->
+    <div class="navbar-brand">
+      <a class="navbar-item">
+        <img class="header-logo" src="./assets/images/urban-cipher-logo.png" alt="our-logo" style="max-height: 65px" />
+      </a>
+      <!-- Mobile "Hamburger Icon" -->
+      <a class="navbar-burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+    <!-- Navbar Menu -->
+    <div class="navbar-menu" id="navLinks">
+      <div class="navbar-end">
+        <!-- <a class="navbar-item">About</a>
           <a class="navbar-item">Testimonials</a> -->
-        </div>
       </div>
-    </nav>
-    <!-- Search Section Input-->
-    <section class="user">
-      <h1 class="title is-size-1 has-text-centered" id="urbCi">Urban Cipher</h1>
-      <!--START TYPE TEXT-->
-      <div class="wrapper">
-        <p class="typing-demo">
-          Deconstruct the meaning of your favorite song.
-        </p>
-      </div>
-      <br />
-      <!--END TYPE TEXT-->
+    </div>
+  </nav>
+  <!-- Search Section Input-->
+  <section class="user">
+    <h1 class="title is-size-1 has-text-centered" id="urbCi">Urban Cipher</h1>
+    <!--START TYPE TEXT-->
+    <div class="wrapper">
+      <p class="typing-demo">
+        Deconstruct the meaning of your favorite song.
+      </p>
+    </div>
+    <br />
+    <!--END TYPE TEXT-->
 
-      <!-- <p class="subtitle has-text-centered">
+    <!-- <p class="subtitle has-text-centered">
         Deconstruct the meaning of your favorite song.
       </p> -->
       <form autocomplete= "off" id="search-form" action="search.html">
@@ -76,47 +69,45 @@
       </form>
     </section>
 
-    <!--Waves Container-->
-    <div>
-      <svg
-        class="waves"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 24 150 28"
-        preserveAspectRatio="none"
-        shape-rendering="auto"
-      >
-        <defs>
-          <path
-            id="gentle-wave"
-            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-          />
-        </defs>
-        <g class="parallax">
-          <use
-            xlink:href="#gentle-wave"
-            x="48"
-            y="0"
-            fill="rgba(255,255,255,0.7"
-          />
-          <use
-            xlink:href="#gentle-wave"
-            x="48"
-            y="3"
-            fill="rgba(255,255,255,0.5)"
-          />
-          <use
-            xlink:href="#gentle-wave"
-            x="48"
-            y="5"
-            fill="rgba(255,255,255,0.3)"
-          />
-          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-        </g>
-      </svg>
-    </div>
-    <!--Waves end-->
+  <!-- Testimonials -->
+<section class="testimonials is-size-5 has-text-weight-bold">
+  <div class="rating ">
+    <img src="#" alt="user image">
+    <p>name</p>
+    <p>rating</p>
+  </div>
+ 
+  <div class="rating">
+    <img src="#" alt="user image">
+    <p>name</p>
+    <p>rating</p>
+  </div>
+ 
+  <div class="rating">
+    <img src="#" alt="user image">
+    <p>name</p>
+    <p>rating</p>
+  </div>
+  </section>
 
-    <script src="./assets/script/homepage.js"></script>
-  </body>
+  <!--Waves Container-->
+  <div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+      </g>
+    </svg>
+  </div>
+  <!--Waves end-->
+
+  <script src="./assets/script/homepage.js"></script>
+</body>
+
 </html>
