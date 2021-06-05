@@ -1,3 +1,4 @@
+// api call break up 
 let query = window.location.search.substring(1);
 let options = query.split(`&`);
 let songName = options[1].split(`=`);
@@ -6,10 +7,14 @@ let artist = artistName[1];
 let song = songName[1];
 
 // html elements for dictionary searches
-let websterForm = document.querySelector("#webster-form");
-let urbanForm = document.querySelector("#urban-form");
+let websterButton = document.querySelector("#webster-button");
+let urbanButton = document.querySelector("#urban-button");
 let websterInput = document.querySelector("#webster-input");
 let urbanInput = document.querySelector("#urban-input");
+let renderWebster = document.getElementById("render-webster")
+let urbanRender = document.getElementById("render-urban");
+let defList = [];
+let deffList = [];
 
 // Mobile Menu
 let burgerIcon = document.querySelector(`#burger`);
@@ -37,43 +42,10 @@ function getLyrics() {
 getLyrics();
 
 
-// function to capture word input in form element
-let wordSubmitWebster = function (event) {
-    event.preventDefault();
-    let websterWord = websterInput.value.trim();
-    // getting word value and setting it to clear after search
-    if (websterWord) {
-        searchWebster(websterWord)
-        websterInput.value = '';
-    } else {
-        console.log('need word to search')
-    }
-}
-// event listener for word input
-websterForm.addEventListener('submit', wordSubmitWebster);
+// function to search urban dictionary API
+function searchUrban() {
+    let word = urbanInput.value;
 
-// function to make API call
-function searchWebster() {
-    // capturing word input 
-    let word = websterInput.value;
-    let websterURL = "https://www.dictionaryapi.com/api/v3/references/collegiate/json/" + word + "?key=c5d60705-510a-44de-be78-83432ad9714a";
-    fetch(websterURL)
-        .then(function (response) {
-            response.json().then(function (data) {
-                console.log(data);
-                // attaching webster definition to html element
-                const renderWebster = document.getElementById("render-webster")
-                renderWebster.textContent = data[0].shortdef[0];
-            })
-        })
-}
-
-
-
-function searchUrban(event) {
-    let word = event.target.previousElementSibling.value;
-
-    let $urbanRender = document.getElementById("render-urban");
     let urbanURL = "https://mashape-community-urban-dictionary.p.rapidapi.com/define?term=" + word;
     fetch(urbanURL, {
         "headers": {
@@ -81,40 +53,49 @@ function searchUrban(event) {
             "x-rapidapi-host": "mashape-community-urban-dictionary.p.rapidapi.com"
         }
     })
-    .then(function(response){
-     return   response.json()
-    })
-    .then(function(response){
-        let newUL = document.createElement("ol");
-        let deffList = response.list
-        for ( var i = 0 ; i < deffList.length;  i ++){
-        let newLi = document.createElement("li")
-            newLi.textContent = deffList[i].definition
-        newUL.append(newLi);
-        }
-        $urbanRender.append(newUL);
-console.log(word)
-    });
-    
+        .then(function (response) {
+            return response.json()
+        })
+        // creating text content from API call
+        .then(function (response) {
+            let newUL = document.createElement("ul");
+            let deffList = response.list
+            for (var i = 0; i < deffList.length; i++) {
+                let newLi = document.createElement("li")
+                newLi.textContent = deffList[i].definition
+                newUL.append(newLi);
+            }
+            urbanRender.append(newUL);
+        });
+    urbanInput.value = '';
 }
-let $urbanButton = document.getElementById("urban-button");
-$urbanButton.addEventListener("click",searchUrban);
+urbanButton.addEventListener("click", searchUrban);
+
+
+
+// function to search webster dictionary API
+function searchWebster() {
+
+    let word = websterInput.value;
+    let websterURL = "https://www.dictionaryapi.com/api/v3/references/collegiate/json/" + word + "?key=c5d60705-510a-44de-be78-83432ad9714a";
+    fetch(websterURL)
+        .then(function (response) {
+            // creating text content from API call
+            response.json().then(function (data) {
+                let newUL = document.createElement("ul");
+                let defList = data;
+                for (var i = 0; i < defList.length; i++) {
+                    let newLi = document.createElement("li")
+                    newLi.textContent = defList[i].shortdef[0];
+                    newUL.append(newLi);
+                }
+                renderWebster.append(newUL);
+            });
+        })
+    websterInput.value = '';
+}
+websterButton.addEventListener('click', searchWebster);
 
 
 
 
-// function searchUrban() {
-//     let word = $wordInputWebster.val().trim();
-//     let urbanURL = "https://mashape-community-urban-dictionary.p.rapidapi.com/define?term=" + word;
-//     fetch(urbanURL 
-//         "headers": {
-//             "x-rapidapi-key": "1bcc08aea8mshc3a3e71246a7264p1de70cjsnb40efe43f9b3",
-//             "x-rapidapi-host": "mashape-community-urban-dictionary.p.rapidapi.com"
-
-//     })
-//         .then(function (response) {
-//             response.json().then(function (data) {
-//                 $urbanDefinition.text(data.list[0].definition);
-//             })
-//         })
-// }
