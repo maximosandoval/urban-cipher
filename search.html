@@ -8,9 +8,9 @@
   <title>Urban Cipher Lyrics</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-  <link rel="icon" type="image/png" sizes="16x16"  href="./assets/images/favicon-16x16.png">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -18,12 +18,7 @@
     <!-- Logo -->
     <div class="navbar-brand">
       <a class="navbar-item">
-        <img
-          class="header-logo"
-          src="./assets/images/urban-cipher-logo.png"
-          alt="our-logo"
-          style="max-height: 65px"
-        />
+        <img class="header-logo" src="./assets/images/urban-cipher-logo.png" alt="our-logo" style="max-height: 65px" />
       </a>
       <!-- Mobile "Hamburger Icon" -->
       <a class="navbar-burger" id="burger">
@@ -56,21 +51,21 @@
         <div class="column is-6-tablet is-4-desktop" id="urbanWeb">
           <div class="field">
             <div class="control">
-              <input type="text" class="input" placeholder="Urban Dictionary Search">
+              <input type="text" class="input" id="urban-input" placeholder="Urban Dictionary Search">
               <button class="button glow-button" id="urban-button" type="submit">SEARCH</button>
               <h3 class="is-size-4 has-text-weight-bold">Definition</h3>
               <div id="render-urban"></div>
             </div>
           </div>
         </div>
-        
-      
+
+
         <!-- Websters Dictionary Search-->
         <div class="column is-6-tablet is-4-desktop navbar-end" id="miriamWeb">
           <div class="field">
             <div class="control">
-              <input type="text" class="input" placeholder="Merriam Webster Dictionary Search">
-              <button class="button glow-button" type="submit">SEARCH</button>
+              <input type="text" class="input" id="webster-input" placeholder="Merriam Webster Dictionary Search">
+              <button class="button glow-button" id="webster-button" type="submit">SEARCH</button>
               <h3 class="is-size-4 has-text-weight-bold">Definition</h3>
               <p id="render-webster"></p>
             </div>
