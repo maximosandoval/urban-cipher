@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +8,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="theme-color" content="#FFFFFF">
 </head>
-
 <body>
   <nav class="navbar has-shadow">
     <!-- Logo -->
@@ -35,55 +33,46 @@
       </div>
     </div>
   </nav>
-
   <!-- Lyric Section -->
   <section class="section">
     <div class="container">
-
-      <!-- Urban DIctionary Definition Output -->
-      <div class="column is-6-tablet is-4-desktop" id="urbanWeb">
-        <div class="field">
-          <div class="control">
-            <input type="text" class="input" id="urban-input" placeholder="Urban Dictionary Search">
-            <button class="button glow-button" id="urban-button" type="submit">SEARCH</button>
-            <h3 class="is-size-4 has-text-weight-bold">Definition</h3>
-            <div id="render-urban"></div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Websters Dictionary Search-->
-
-
-  <!-- <div class="column is-6-tablet is-4-desktop navbar-end" id="miriamWeb">
-        <div class="field">
-          <div class="control">
-            <input type="text" class="input" id="webster-input" placeholder="Merriam Webster Dictionary Search">
-            <button class="button glow-button" id="webster-button" type="submit">SEARCH</button>
-            <h3 class="is-size-4 has-text-weight-bold">Definition</h3>
-            <p id="render-webster"></p>
-          </div>
-        </div>
-      </div> -->
-
-  <section class="section">
-    <div class="container">
       <div class="columns is-multiline">
-        <div class="column is-12-tablet is-12-desktop">
+        <div class="column is-12-tablet is-8-desktop">
           <h1 class="title is-size-1" id="lyricsInput">Lyrics</h1>
           <p>
-          <pre id="render-lyrics"></pre>
+            <pre id="render-lyrics"></pre>
           </p>
+        </div>
+        <!-- Urban DIctionary Definition Output -->
+        <div class="column is-6-tablet is-4-desktop" id="urbanWeb">
+          <div class="field">
+            <div class="control">
+              <div class="card">
+              <input type="text" class="input" id="urban-input" placeholder="Urban Dictionary Search">
+              <button class="button glow-button" id="urban-button" type="submit">SEARCH</button>
+              <h3 class="is-size-4 has-text-weight-bold">Definition</h3>
+              <div id="render-urban"></div>
+              </div>
+            </div>
+        </div>
+        <!-- Websters Dictionary Search-->
+        <!-- <div class="column is-6-tablet is-4-desktop navbar-end" id="miriamWeb"> -->
+          <div class="field2">
+            <div class="control">
+              <div class="card">
+              <input type="text" class="input" id="webster-input" placeholder="Merriam Webster Dictionary Search">
+              <button class="button glow-button" id="webster-button" type="submit">SEARCH</button>
+              <h3 class="is-size-4 has-text-weight-bold">Definition</h3>
+              <p id="render-webster"></p>
+            </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-
+  </div>
+    </section>
   <!-- Script -->
   <script src="./assets/script/search.js"></script>
 </body>
-
 </html>
