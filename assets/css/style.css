@@ -3,6 +3,7 @@ body {
   background: lightblue
     url("https://developer.spotify.com/images/home/tile-1-alt-bg.jpg") no-repeat
     fixed center;
+   
 }
 
 .navbar-item .header-logo {
