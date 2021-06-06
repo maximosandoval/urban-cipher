@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 // api call break up 
->>>>>>> 21d66962cea3ae6ec0b22b19051e696aad555eda
 let query = window.location.search.substring(1);
 let options = query.split(`&`);
 let songName = options[1].split(`=`);
