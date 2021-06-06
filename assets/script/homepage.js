@@ -35,7 +35,7 @@ function ratings() {
         var rating = Math.ceil(Math.random() * 5);
         $ratings[i].children[0].attributes[0].value = response.results[i].picture.large;
         $ratings[i].children[1].innerText = response.results[i].name.first + " " + response.results[i].name.last;
-        $ratings[i].children[2].innerText = rating + "/5 stars";
+        // $ratings[i].children[2].innerText = rating + "/5 stars";
       }
 
     })

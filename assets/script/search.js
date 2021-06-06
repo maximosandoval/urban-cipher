@@ -5,6 +5,7 @@ let songName = options[1].split(`=`);
 let artistName = options[0].split(`=`);
 let artist = artistName[1];
 let song = songName[1];
+
 // html elements for dictionary searches
 let websterButton = document.querySelector("#webster-button");
 let urbanButton = document.querySelector("#urban-button");
@@ -14,12 +15,14 @@ let renderWebster = document.getElementById("render-webster")
 let urbanRender = document.getElementById("render-urban");
 let defList = [];
 let deffList = [];
+
 // Mobile Menu
 let burgerIcon = document.querySelector(`#burger`);
 let navbarMenu = document.querySelector(`#navLinks`);
 burgerIcon.addEventListener(`click`, () => {
     navbarMenu.classList.toggle(`is-active`);
 });
+
 // function to render lyrics to screen
 function getLyrics() {
     // API call to fetch lyrics
@@ -36,6 +39,7 @@ function getLyrics() {
         })
 }
 getLyrics();
+
 // function to search urban dictionary API
 function searchUrban() {
     let word = urbanInput.value;
@@ -63,6 +67,7 @@ function searchUrban() {
     urbanInput.value = '';
 }
 urbanButton.addEventListener("click", searchUrban);
+
 // function to search webster dictionary API
 function searchWebster() {
     let word = websterInput.value;
@@ -86,8 +91,6 @@ function searchWebster() {
 }
 websterButton.addEventListener('click', searchWebster);
 
-
-
 // function to search urban dictionary API
 function searchUrban() {
     let word = urbanInput.value;
@@ -115,15 +118,16 @@ function searchUrban() {
     urbanInput.value = '';
 }
 urbanButton.addEventListener("click", searchUrban);
+
 // function to search webster dictionary API
 function searchWebster() {
     let word = websterInput.value;
     let websterURL = "https://www.dictionaryapi.com/api/v3/references/collegiate/json/" + word + "?key=c5d60705-510a-44de-be78-83432ad9714a";
     fetch(websterURL)
         .then(function (response) {
-            // creating text content from API call
-      return response.json()
+            return response.json()
         })
+        // creating text content from API call
         .then(function (data) {
             let newUL = document.createElement("ul");
             let defList = data;
