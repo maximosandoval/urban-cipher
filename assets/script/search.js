@@ -119,7 +119,7 @@ function searchWebster() {
     fetch(websterURL)
         .then(function (response) {
             // creating text content from API call
-            return response.json()
+      return response.json()
         })
         .then(function (data) {
             let newUL = document.createElement("ul");
