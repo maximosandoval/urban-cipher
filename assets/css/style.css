@@ -3,6 +3,7 @@ body {
   background: lightblue
     url("https://developer.spotify.com/images/home/tile-1-alt-bg.jpg") no-repeat
     fixed center;
+   
 }
 
 .navbar-item .header-logo {
@@ -194,3 +195,52 @@ h3 {
   background-color: DodgerBlue !important;
   color: #ffffff;
 }
+
+.card{
+  height: 100%;
+  background-color: rgb(205, 162, 211);
+  font-size: 2vh;
+  padding:2%;
+  overflow-y:auto;
+  margin:3%;
+  
+  
+  
+  
+}
+
+.field{
+  margin-top: 10vh;
+  
+  
+
+}
+
+
+.field2{
+
+margin-top: 2%;
+margin-bottom: 8vh;
+} 
+
+
+
+
+/* .card{
+  height: 50px;
+  display: flex;
+  margin-top:25px;
+  padding-bottom: 100px;
+}
+#urbanWeb{
+  position: fixed;
+  top:50px;
+  margin-bottom: 20vh;
+  border:30px;
+}
+#miriamWeb{
+  margin-top:40vh;
+  position: fixed;
+  border:30px;
+  bottom:40px;
+} */
