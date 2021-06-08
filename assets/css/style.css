@@ -15,14 +15,11 @@ body {
   width: 135px;
 }
 
-/* Navigation */
-#navLinks {
-  padding-right: 590px;
-  padding-top: 60px;
-}
+
 
 /*Titile  */
 #urbCi {
+  padding-left: 80px;
   margin-top: 100px;
   color: #413596;
 }
@@ -39,6 +36,7 @@ form {
 }
 
 form p {
+  
   color: #413596;
   
 }
@@ -63,7 +61,12 @@ form p {
 }
 
 #ratings{
-  padding-top:250px;     
+  padding-top:250px; 
+   
+}
+
+#aboutUs{
+  padding-top:150px; 
 }
 
 /* Waves */
@@ -147,6 +150,7 @@ form p {
 
 /* TYPE TEXT BEGINS */
 .wrapper {
+  padding-left: 80px;
   height: 7vh;
   /*This part is important for centering*/
   display: flex;
@@ -230,7 +234,7 @@ h3 {
 
 .card{
   height: 100%;
-  background-color: rgb(205, 162, 211);
+  background-color:#9f626a;
   font-size: 2vh;
   padding:2%;
   overflow-y:auto;
@@ -259,29 +263,7 @@ li{
   list-style-type: circle;
 }
 
-/* button{
-margin-left: 30vh;
-} */
 
-
-/* .card{
-  height: 50px;
-  display: flex;
-  margin-top:25px;
-  padding-bottom: 100px;
-}
-#urbanWeb{
-  position: fixed;
-  top:50px;
-  margin-bottom: 20vh;
-  border:30px;
-}
-#miriamWeb{
-  margin-top:40vh;
-  position: fixed;
-  border:30px;
-  bottom:40px;
-/* User Ratings */
 .fa {
   font-size: 25px;
 }
@@ -290,8 +272,4 @@ margin-left: 30vh;
   color: orange;
 }
 
-/*Shrinking for mobile*/
-/* @media (max-width: 768px) {
 
-
-} */
