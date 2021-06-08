@@ -89,7 +89,6 @@ $songInput.addEventListener("focus", async function () {
     }
 })
 
-
 function closeAllLists(elmnt) {
     /*close all autocomplete lists in the document,
     except the one passed as an argument:*/
