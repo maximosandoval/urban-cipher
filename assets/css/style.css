@@ -1,6 +1,6 @@
 /* Body */
 body {
-  background: lightblue url("/assets/images/jumbotron-1.jpeg") no-repeat fixed
+  background: lightblue url("https://developer.spotify.com/images/home/tile-1-alt-bg.jpg") no-repeat fixed
     center;
 }
 
