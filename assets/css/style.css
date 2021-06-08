@@ -1,4 +1,5 @@
 
+
 /* Body */
 body {
   background: lightblue
@@ -58,9 +59,12 @@ form p {
 .testimonials{
   display: flex;
   justify-content: space-evenly;
-  margin: 220px;
+  margin: 20px;
 }
 
+#ratings{
+  padding-top:250px;     
+}
 
 /* Waves */
 .waves {
@@ -129,6 +133,8 @@ form p {
     margin: 34px;
     width: auto;
    }
+
+  
 
   form{
     text-align: center;
@@ -249,7 +255,13 @@ margin-top: 2%;
 margin-bottom: 8vh;
 } 
 
+li{
+  list-style-type: circle;
+}
 
+/* button{
+margin-left: 30vh;
+} */
 
 
 /* .card{
