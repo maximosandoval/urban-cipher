@@ -58,9 +58,12 @@ form p {
 .testimonials{
   display: flex;
   justify-content: space-evenly;
-  margin: 220px;
+  margin: 19px;
 }
 
+#ratings{
+
+}
 
 /* Waves */
 .waves {
