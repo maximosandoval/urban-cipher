@@ -1,10 +1,7 @@
-
 /* Body */
 body {
-  background: lightblue
-    url("https://developer.spotify.com/images/home/tile-1-alt-bg.jpg") no-repeat
-    fixed center;
-   
+  background: lightblue url("https://developer.spotify.com/images/home/tile-1-alt-bg.jpg") no-repeat fixed
+    center;
 }
 
 .navbar-item .header-logo {
@@ -14,9 +11,7 @@ body {
   width: 135px;
 }
 
-
-
-/*Titile  */
+/* Title */
 #urbCi {
   padding-left: 80px;
   margin-top: 100px;
@@ -26,7 +21,6 @@ body {
 form input {
   min-width: 550px;
   min-height: 40px;
-  
 }
 /* Search Input Size */
 form {
@@ -37,7 +31,6 @@ form {
 form p {
   
   color: #413596;
-  
 }
 
 /* Button */
@@ -53,19 +46,18 @@ form p {
   box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
 }
 
-.testimonials{
+.testimonials {
   display: flex;
   justify-content: space-evenly;
   margin: 20px;
 }
 
-#ratings{
-  padding-top:250px; 
-   
+#ratings {
+  padding-top: 250px;
 }
 
-#aboutUs{
-  padding-top:150px; 
+#aboutUs {
+  padding-top: 150px;
 }
 
 /* Waves */
@@ -107,7 +99,6 @@ form p {
   }
 }
 
-
 /* User Ratings */
 .fa {
   font-size: 25px;
@@ -117,28 +108,22 @@ form p {
   color: orange;
 }
 
-
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
   .waves {
     height: 40px;
     min-height: 40px;
   }
-  .content {
-    height: 30vh;
-  }
   h1 {
     font-size: 24px;
   }
 
-  #userRating{
+  #userRating {
     margin: 34px;
     width: auto;
-   }
+  }
 
-  
-
-  form{
+  form {
     text-align: center;
     margin-bottom: 104px;
     padding-right: 30px;
@@ -163,7 +148,6 @@ form p {
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
-  /* font-family: roboto; */
   font-size: 1.25em;
   text-align: center;
 }
@@ -231,21 +215,30 @@ h3 {
   color: #ffffff;
 }
 
+.card {
+  background-color: rgb(205, 162, 211);
+  font-size: 2vh;
+  padding: 2%;
+  overflow-y: scroll;
+  margin: 3%;
+  height: 35vh;
+  width: 60vh;
+}
 
-.field{
+.field {
   margin-top: 10vh;
+  position: fixed;
+  top: 10vh;
+  right: 5vh;
 }
 
-
-.field2{
-margin-top: 2%;
-margin-bottom: 8vh;
-} 
-
-li{
-  list-style-type: circle;
+.field2 {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  position: fixed;
+  top: 50vh;
+  right: 5vh;
 }
-
 
 .fa {
   font-size: 25px;
@@ -253,6 +246,24 @@ li{
 
 .checked {
   color: orange;
+}
+
+@media screen and (max-width: 768px) {
+  .field {
+    position: static;
+  }
+  .field2 {
+    position: static;
+  }
+  .footer {
+    position: static;
+  }
+  #urbanWeb {
+    position: relative;
+  }
+  .container {
+    position: relative;
+  }
 }
 
 
