@@ -58,9 +58,12 @@ form p {
 .testimonials{
   display: flex;
   justify-content: space-evenly;
-  margin: 220px;
+  margin: 20px;
 }
 
+#ratings{
+  padding-top:250px;     
+}
 
 /* Waves */
 .waves {
@@ -129,6 +132,8 @@ form p {
     margin: 34px;
     width: auto;
    }
+
+  
 
   form{
     text-align: center;
@@ -223,33 +228,31 @@ h3 {
 }
 
 .card{
-  height: 100%;
   background-color: rgb(205, 162, 211);
   font-size: 2vh;
   padding:2%;
-  overflow-y:auto;
+  overflow-y: scroll;
   margin:3%;
-  
-  
-  
-  
+  height: 35vh;
 }
 
 .field{
   margin-top: 10vh;
-  
-  
-
 }
 
 
 .field2{
-
 margin-top: 2%;
 margin-bottom: 8vh;
 } 
 
+li{
+  list-style-type: circle;
+}
 
+/* button{
+margin-left: 30vh;
+} */
 
 
 /* .card{
