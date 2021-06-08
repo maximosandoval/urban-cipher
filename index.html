@@ -28,8 +28,8 @@
     <!-- Navbar Menu -->
     <div class="navbar-menu" id="navLinks">
       <div class="navbar-end">
-        <!-- <a class="navbar-item">About</a>
-          <a class="navbar-item">Testimonials</a> -->
+        <a  class="navbar-item">About</a>
+          <a href="#userRating" class="navbar-item">Testimonials</a>
       </div>
     </div>
   </nav>
@@ -45,50 +45,51 @@
     <br />
     <!--END TYPE TEXT-->
 
-    <!-- <p class="su btitle has-text-centered">
-        Deconstruct the meaning of your favorite song.
-      </p> -->
-      <form autocomplete= "off" id="search-form" action="search.html">
-        <div class="autocomplete">
-          <input
-          id="artist-input"
-          class="input"
-          type="text"
-          name="artist"
-          placeholder="Enter your favorite artist"
-        /><br />
+    <form autocomplete="off" id="search-form" action="search.html">
+      <div class="autocomplete">
+        <input id="artist-input" class="input" type="text" name="artist"
+          placeholder="Enter your favorite artist" /><br/>
         <p class="is-size-2 has-text-weight-bold">+</p>
-        <input
-          id="song-input"
-          class="input"
-          type="text"
-          name="song"
-          placeholder="Enter the name of the song"
-        /><br />
-        </div>
-        <button class="button glow-button" type="submit">SEARCH</button>
-      </form>
-    </section>
+        <input id="song-input" class="input" type="text" name="song" placeholder="Enter the name of the song" /><br/>
+      </div>
+      <button class="button glow-button" type="submit">SEARCH</button>
+    </form>
+  </section>
 
   <!-- Testimonials -->
-<section class="testimonials is-size-5 has-text-weight-bold">
-  <div class="rating ">
-    <img src="#" alt="user image">
-    <p>name</p>
-    <p>rating</p>
-  </div>
- 
-  <div class="rating">
-    <img src="#" alt="user image">
-    <p>name</p>
-    <p>rating</p>
-  </div>
- 
-  <div class="rating">
-    <img src="#" alt="user image">
-    <p>name</p>
-    <p>rating</p>
-  </div>
+  <section class="testimonials has-text-weight-bold" id="userRating">
+    <div class="rating">
+      <img src="#" alt="user image" width="150" height="150">
+      <p>name</p>
+      <span class="heading is-size-6">User Rating</span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+    </div>
+
+    <div class="rating">
+      <img src="#" alt="user image" width="150" height="150">
+      <p>name</p>
+      <span class="heading is-size-6">User Rating</span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+    </div>
+
+    <div class="rating">
+      <img src="#" alt="user image" width="150" height="150">
+      <p>name</p>
+      <span class="heading is-size-6">User Rating</span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+    </div>
   </section>
 
   <!--Waves Container-->
