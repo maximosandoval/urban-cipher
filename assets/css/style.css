@@ -57,11 +57,7 @@ form p {
 .testimonials{
   display: flex;
   justify-content: space-evenly;
-  margin: 19px;
-}
-
-#ratings{
-padding-top: 253px;
+  margin: 220px;
 }
 
 
@@ -225,3 +221,64 @@ h3 {
   color: #ffffff;
 }
 
+.card{
+  height: 100%;
+  background-color: rgb(205, 162, 211);
+  font-size: 2vh;
+  padding:2%;
+  overflow-y:auto;
+  margin:3%;
+  
+  
+  
+  
+}
+
+.field{
+  margin-top: 10vh;
+  
+  
+
+}
+
+
+.field2{
+
+margin-top: 2%;
+margin-bottom: 8vh;
+} 
+
+
+
+
+/* .card{
+  height: 50px;
+  display: flex;
+  margin-top:25px;
+  padding-bottom: 100px;
+}
+#urbanWeb{
+  position: fixed;
+  top:50px;
+  margin-bottom: 20vh;
+  border:30px;
+}
+#miriamWeb{
+  margin-top:40vh;
+  position: fixed;
+  border:30px;
+  bottom:40px;
+/* User Ratings */
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+/*Shrinking for mobile*/
+/* @media (max-width: 768px) {
+
+
+} */
