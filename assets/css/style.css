@@ -236,7 +236,13 @@ margin-top: 2%;
 margin-bottom: 8vh;
 } 
 
+li{
+  list-style-type: circle;
+}
 
+/* button{
+margin-left: 30vh;
+} */
 
 
 /* .card{
