@@ -1,3 +1,7 @@
+html, body {
+  scroll-behavior: smooth;
+}
+
 /* Body */
 body {
   background: lightblue
@@ -99,6 +103,18 @@ form p {
     transform: translate3d(85px, 0, 0);
   }
 }
+
+
+/* User Ratings */
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
   .waves {
