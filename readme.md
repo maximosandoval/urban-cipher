@@ -1,8 +1,12 @@
-# Urban Cipher - Project 1
+# Urban Cipher - Deconstruct your favorite song lyrics
 
-about project here....
+### Project 1:
 
-[View deployed project here](https://docs.google.com/document/d/1V2RXReA5TwDCn5gtMiJxGrb_z7W5VdWmcWo7TzEY9T0/edit?usp=sharing)
+Is your favorite song just a string of words you've memorized, but whose meaning eludes you? Have you said 'Yeet' with a straight face, but with shame in your heart? Do you mumble through the verses until the chorus arrives? We've got you covered. With our app you can deepen your lyrical knowledge by using our dictionary functions to look up any word.
+
+Start by entering the artist you are looking for. Our app will generate that artists top 10 tracks to help you find your song, otherwise enter the song of your choice. Press search and we generate the lyrics of that song for you. Now you can use our Urban Dictionary search for any lingo you want to get 'down' with. Or further your 'basic' knowledge with our Webster dictionary search. You are now on your way to deepening your lyrical knowledge and discovering the meaning of 'Yeet'.
+
+[View deployed project here](https://maximosandoval.github.io/urban-cipher/)
 
 ### Criteria:
 
