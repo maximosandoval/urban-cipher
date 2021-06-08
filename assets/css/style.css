@@ -113,9 +113,6 @@ form p {
     height: 40px;
     min-height: 40px;
   }
-  .content {
-    height: 30vh;
-  }
   h1 {
     font-size: 24px;
   }
@@ -145,7 +142,7 @@ form p {
 }
 
 .typing-demo {
-  width: 34ch;
+  width: 39ch;
   animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
@@ -224,19 +221,22 @@ h3 {
   overflow-y: scroll;
   margin: 3%;
   height: 35vh;
+  width: 60vh;
 }
 
 .field {
   margin-top: 10vh;
+  position: fixed;
+  top: 10vh;
+  right: 5vh;
 }
 
 .field2 {
-  margin-top: 2%;
-  margin-bottom: 8vh;
-}
-
-li {
-  list-style-type: circle;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  position: fixed;
+  top: 50vh;
+  right: 5vh;
 }
 
 .fa {
@@ -246,3 +246,23 @@ li {
 .checked {
   color: orange;
 }
+
+@media screen and (max-width: 768px) {
+  .field {
+    position: static;
+  }
+  .field2 {
+    position: static;
+  }
+  .footer {
+    position: static;
+  }
+  #urbanWeb {
+    position: relative;
+  }
+  .container {
+    position: relative;
+  }
+}
+
+
