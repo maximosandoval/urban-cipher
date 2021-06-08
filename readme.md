@@ -6,8 +6,9 @@ Is your favorite song just a string of words you've memorized, but whose meaning
 
 Start by entering the artist you are looking for. Our app will generate that artists top 10 tracks to help you find your song, otherwise enter the song of your choice. Press search and we generate the lyrics of that song for you. Now you can use our Urban Dictionary search for any lingo you want to get 'hip' with. Or further your 'traditional ' knowledge with our Webster dictionary search. You are now on your way to deepening your lyrical knowledge and discovering the meaning of 'Yeet'.
 
-[View deployed project here](https://maximosandoval.github.io/urban-cipher/)
-[View presentation slides here](https://docs.google.com/presentation/d/1PNjSxtizisa_sOnnzYcdY_tymPh249pRPdNc1uHs8w0/edit#slide=id.gd5b15f0a3_5_26)
+- [View deployed project here](https://maximosandoval.github.io/urban-cipher/)
+
+- [View presentation slides here](https://docs.google.com/presentation/d/1PNjSxtizisa_sOnnzYcdY_tymPh249pRPdNc1uHs8w0/edit#slide=id.gd5b15f0a3_5_26)
 
 ### Criteria:
 
@@ -56,6 +57,4 @@ With a team, you will conceive and execute a design that solves a real-world pro
 
 ### Screen Shots
 
-![]()
-![]()
-![]()
+![Demo](https://media0.giphy.com/media/QLHCnxFUBpMOwjaF5M/giphy.gif?cid=790b7611c2c98c9e543aec9260510c64f6423ce67ad92fda&rid=giphy.gif&ct=g)
