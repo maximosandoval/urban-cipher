@@ -42,10 +42,10 @@ With a team, you will conceive and execute a design that solves a real-world pro
 
 ### Creator Breakdown:
 
-Scrum Master: Max
-HTML: Ana
-CSS: Matt and Max
-JavaScript: Caitlin and Alicia
+- Scrum Master: [Max](https://github.com/maximosandoval)
+- HTML: [Ana](https://github.com/abanae)
+- CSS: [Matt](https://github.com/COcoder555) & [Max](https://github.com/maximosandoval)
+- JavaScript: [Alicia](https://github.com/aliciachamar) & [Caitlin](https://github.com/CaitlinSwickard)
 
 [View project scope here](https://docs.google.com/document/d/1V2RXReA5TwDCn5gtMiJxGrb_z7W5VdWmcWo7TzEY9T0/edit?usp=sharing)
 
