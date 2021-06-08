@@ -55,6 +55,6 @@ With a team, you will conceive and execute a design that solves a real-world pro
 
 [View project scope here](https://docs.google.com/document/d/1V2RXReA5TwDCn5gtMiJxGrb_z7W5VdWmcWo7TzEY9T0/edit?usp=sharing)
 
-### Screen Shots
+### Demo
 
 ![Demo](https://media0.giphy.com/media/QLHCnxFUBpMOwjaF5M/giphy.gif?cid=790b7611c2c98c9e543aec9260510c64f6423ce67ad92fda&rid=giphy.gif&ct=g)
