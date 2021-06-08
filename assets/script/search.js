@@ -13,6 +13,8 @@ let websterInput = document.querySelector("#webster-input");
 let urbanInput = document.querySelector("#urban-input");
 let renderWebster = document.getElementById("render-webster")
 let urbanRender = document.getElementById("render-urban");
+let websterWordSpan = document.getElementById("websterWordSpan");
+let urbanWordSpan = document.getElementById("urbanWordSpan");
 let defList = [];
 let deffList = [];
 
@@ -39,12 +41,14 @@ function getLyrics() {
         })
 
 }
-getLyrics();
 
+getLyrics();
 
 // function to search urban dictionary API
 function searchUrban() {
+    urbanRender.innerHTML = "";
     let word = urbanInput.value;
+    urbanWordSpan.textContent = word;
     let urbanURL = "https://mashape-community-urban-dictionary.p.rapidapi.com/define?term=" + word;
     fetch(urbanURL, {
         "headers": {
@@ -56,34 +60,37 @@ function searchUrban() {
             return response.json()
         })
         // creating text content from API call
-        .then(function (response) {
+        .then(function (data) {
             let newUL = document.createElement("ul");
-            let deffList = response.list
+            let deffList = data.list;
             for (var i = 0; i < deffList.length; i++) {
-                let newLi = document.createElement("li")
-                newLi.textContent = deffList[i].definition
+                let newLi = document.createElement("li");
+                newLi.textContent = deffList[i].definition;
                 newUL.append(newLi);
             }
             urbanRender.append(newUL);
         });
     urbanInput.value = '';
 }
+
 urbanButton.addEventListener("click", searchUrban);
 
 // function to search webster dictionary API
 function searchWebster() {
+    renderWebster.innerHTML = "";
     let word = websterInput.value;
+    websterWordSpan.textContent = word;
     let websterURL = "https://www.dictionaryapi.com/api/v3/references/collegiate/json/" + word + "?key=c5d60705-510a-44de-be78-83432ad9714a";
     fetch(websterURL)
         .then(function (response) {
             // creating text content from API call
-            return response.json()
+            return response.json();
         })
         .then(function (data) {
             let newUL = document.createElement("ul");
             let defList = data;
             for (var i = 0; i < defList.length; i++) {
-                let newLi = document.createElement("li")
+                let newLi = document.createElement("li");
                 newLi.textContent = defList[i].shortdef[0];
                 newUL.append(newLi);
             }

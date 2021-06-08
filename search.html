@@ -28,8 +28,8 @@
     <!-- Navbar Menu -->
     <div class="navbar-menu" id="navLinks">
       <div class="navbar-end">
-        <a  class="navbar-item">About</a>
-        <a href="#userRating" class="navbar-item">Testimonials</a>
+        <a  href="index.html#aboutUs" class="navbar-item">About</a>
+        <a href="index.html#userRating" class="navbar-item">Testimonials</a>
       </div>
     </div>
   </nav>
@@ -50,19 +50,18 @@
               <div class="card">
               <input type="text" class="input" id="urban-input" placeholder="Urban Dictionary Search">
               <button class="button glow-button" id="urban-button" type="submit">SEARCH</button>
-              <h3 class="is-size-4 has-text-weight-bold">Definition</h3>
+              <h3 class="is-size-4 has-text-weight-bold">Definition: <span id="urbanWordSpan"></span></h3>
               <div id="render-urban"></div>
               </div>
             </div>
         </div>
         <!-- Websters Dictionary Search-->
-        <!-- <div class="column is-6-tablet is-4-desktop navbar-end" id="miriamWeb"> -->
           <div class="field2">
             <div class="control">
               <div class="card">
               <input type="text" class="input" id="webster-input" placeholder="Merriam Webster Dictionary Search">
               <button class="button glow-button" id="webster-button" type="submit">SEARCH</button>
-              <h3 class="is-size-4 has-text-weight-bold">Definition</h3>
+              <h3 class="is-size-4 has-text-weight-bold">Definition: <span id="websterWordSpan"></span></h3>
               <p id="render-webster"></p>
             </div>
             </div>
@@ -70,8 +69,16 @@
         </div>
       </div>
     </div>
-  </div>
     </section>
+
+      <!-- Footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+    <P>Copyright 2021 Urban-Cipher</P>                                                                                                                       
+    </div>
+      </footer>
+
+
   <!-- Script -->
   <script src="./assets/script/search.js"></script>
 </body>
