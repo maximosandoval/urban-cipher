@@ -5,7 +5,6 @@ var topTracks = [];
 
 
 
-
 function songDropDown() {
   topTracks = [];
   let artist = $artistInput.value;
