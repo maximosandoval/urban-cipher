@@ -44,6 +44,8 @@ function getLyrics() {
 
 getLyrics();
 
+getLyrics();
+
 // function to search urban dictionary API
 function searchUrban() {
     urbanRender.innerHTML = "";
