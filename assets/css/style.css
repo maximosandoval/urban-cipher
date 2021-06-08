@@ -1,5 +1,4 @@
 
-
 /* Body */
 body {
   background: lightblue
@@ -232,29 +231,13 @@ h3 {
   color: #ffffff;
 }
 
-.card{
-  height: 100%;
-  background-color:#9f626a;
-  font-size: 2vh;
-  padding:2%;
-  overflow-y:auto;
-  margin:3%;
-  
-  
-  
-  
-}
 
 .field{
   margin-top: 10vh;
-  
-  
-
 }
 
 
 .field2{
-
 margin-top: 2%;
 margin-bottom: 8vh;
 } 
