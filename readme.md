@@ -4,9 +4,10 @@
 
 Is your favorite song just a string of words you've memorized, but whose meaning eludes you? Have you said 'Yeet' with a straight face, but with shame in your heart? Do you mumble through the verses until the chorus arrives? We've got you covered. With our app you can deepen your lyrical knowledge by using our dictionary functions to look up any word.
 
-Start by entering the artist you are looking for. Our app will generate that artists top 10 tracks to help you find your song, otherwise enter the song of your choice. Press search and we generate the lyrics of that song for you. Now you can use our Urban Dictionary search for any lingo you want to get 'down' with. Or further your 'basic' knowledge with our Webster dictionary search. You are now on your way to deepening your lyrical knowledge and discovering the meaning of 'Yeet'.
+Start by entering the artist you are looking for. Our app will generate that artists top 10 tracks to help you find your song, otherwise enter the song of your choice. Press search and we generate the lyrics of that song for you. Now you can use our Urban Dictionary search for any lingo you want to get 'hip' with. Or further your 'traditional ' knowledge with our Webster dictionary search. You are now on your way to deepening your lyrical knowledge and discovering the meaning of 'Yeet'.
 
 [View deployed project here](https://maximosandoval.github.io/urban-cipher/)
+[View presentation slides here](https://docs.google.com/presentation/d/1PNjSxtizisa_sOnnzYcdY_tymPh249pRPdNc1uHs8w0/edit#slide=id.gd5b15f0a3_5_26)
 
 ### Criteria:
 
