@@ -265,4 +265,21 @@ h3 {
   }
 }
 
+@media screen and (max-width: 767px) {
+  form input {
+    min-width: 280px;
+  }
+  .typing-demo {
+    font-size: 0.75em;
+  }
+  .wrapper {
+    padding: 0;
+  }
+  #urbCi {
+    padding: 0;
+  }
+  form {
+    margin-left: 9%;
+  }
+}
 
